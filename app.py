@@ -1,4 +1,4 @@
-import boto3
+import boto4
 
 # Create an EC2 resource
 ec2 = boto3.resource('ec2')
