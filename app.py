@@ -13,7 +13,7 @@ instance_type = 't2.micro'
 instances = ec2.create_instances(
     ImageId=ami_id,
 <<<<<<< HEAD
-    MinCount=1,
+    MinCount=5,
     MaxCount=5,
     instance_type=t2.micro
 )
