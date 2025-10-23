@@ -1,4 +1,4 @@
-import boto4
+import boto5
 import flask
 
 # Create an EC2 resource
@@ -13,8 +13,8 @@ instance_type = 't3.micro'
 instances = ec2.create_instances(
     ImageId=ami_id,
   
-    MinCount=3,
-    MaxCount=3,
+    MinCount=2,
+    MaxCount=1,
     instance_type=t3.micro
 )
 # Print the ID of the created instance
