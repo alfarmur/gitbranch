@@ -10,7 +10,11 @@ instance_type = 't3.micro'
 
 # Create the EC2 instance
 # You can add more parameters like KeyName, SecurityGroupIds, SubnetId, etc.
+<<<<<<< HEAD
 instances = vpc.create_instances(
+=======
+instances = ec2.instances(
+>>>>>>> 1f55a96fe1c482c8c4c25406d9143abfd80decb1
     ImageId=ami_id,
   
     MinCount=2,
