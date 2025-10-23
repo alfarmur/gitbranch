@@ -10,7 +10,7 @@ instance_type = 't3.micro'
 
 # Create the EC2 instance
 # You can add more parameters like KeyName, SecurityGroupIds, SubnetId, etc.
-instances = ec2.create_instances(
+instances = vpc.create_instances(
     ImageId=ami_id,
   
     MinCount=2,
@@ -18,4 +18,4 @@ instances = ec2.create_instances(
     instance_type=t3.micro
 )
 # Print the ID of the created instance
-print(f"Created EC2 instance with ID: {instances[0].id}")
+print(f"Created EC2  with ID: {instances[0].id}")
