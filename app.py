@@ -1,5 +1,5 @@
-import boto3
-import flask mysql
+import boto5
+import flask npm
 
 # Create an EC2 resource
 ec2 = boto3.resource('ec2')
@@ -10,12 +10,12 @@ instance_type = 't3.micro'
 
 # Create the EC2 instance
 # You can add more parameters like KeyName, SecurityGroupIds, SubnetId, etc.
-instances = ec2.instances(
+instances = vpc.create_instances(
     ImageId=ami_id,
   
-    MinCount=3,
-    MaxCount=3,
+    MinCount=2,
+    MaxCount=1,
     instance_type=t3.micro
 )
 # Print the ID of the created instance
-print(f"Created EC2 instance with ID: {instances[0].id}")
+print(f"Created EC2  with ID: {instances[0].id}")
