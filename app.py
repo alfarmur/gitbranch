@@ -1,4 +1,4 @@
-import boto3
+import boto5
 import flask
 
 # Create an EC2 resource
