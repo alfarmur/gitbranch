@@ -1,4 +1,5 @@
 import boto3
+import flask
 
 # Create an EC2 resource
 ec2 = boto3.resource('ec2')
@@ -11,7 +12,7 @@ instance_type = 't2.micro'
 # You can add more parameters like KeyName, SecurityGroupIds, SubnetId, etc.
 instances = ec2.create_instances(
     ImageId=ami_id,
-    MinCount=1,
+    MinCount=2,
     MaxCount=1,
     InstanceType=instance_type
 )
