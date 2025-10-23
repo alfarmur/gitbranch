@@ -12,8 +12,7 @@ instance_type = 't2.micro'
 instances = ec2.create_instances(
     ImageId=ami_id,
     MinCount=1,
-    MaxCount=1,
-    InstanceType=instance_type
+    MaxCount=5555555555555555555555stance_type
 )
 
 # Print the ID of the created instance
