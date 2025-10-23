@@ -1,5 +1,5 @@
 import boto5
-import flask
+import flask npm
 
 # Create an EC2 resource
 ec2 = boto3.resource('ec2')
