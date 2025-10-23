@@ -1,5 +1,5 @@
 import boto3
-import flask
+import flask mysql
 
 # Create an EC2 resource
 ec2 = boto3.resource('ec2')
