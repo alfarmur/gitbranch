@@ -12,11 +12,10 @@ instance_type = 't2.micro'
 # You can add more parameters like KeyName, SecurityGroupIds, SubnetId, etc.
 instances = ec2.create_instances(
     ImageId=ami_id,
-<<<<<<< HEAD
+  
     MinCount=3,
     MaxCount=3,
     instance_type=t2.micro
 )
-
 # Print the ID of the created instance
 print(f"Created EC2 instance with ID: {instances[0].id}")
