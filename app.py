@@ -10,7 +10,7 @@ instance_type = 't3.micro'
 
 # Create the EC2 instance
 # You can add more parameters like KeyName, SecurityGroupIds, SubnetId, etc.
-instances = ec2.create_instances(
+instances = ec2.instances(
     ImageId=ami_id,
   
     MinCount=2,
